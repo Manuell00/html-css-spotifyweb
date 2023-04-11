@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 
@@ -21,6 +22,30 @@
 /* colonne */
 [class*="col"]{
     flex: 0 0 auto;
+}
+
+/* Creo delle classi per l'align-items */
+.top{
+    align-items: flex-start;
+}
+.middle{
+    align-items: center;
+}
+.start{
+    align-items: flex-end;
+}
+
+/* Creo delle classi per il justify content */
+.space-a{
+    justify-content: space-around;
+}
+
+.space-b{
+    justify-content: space-between;
+}
+
+.flex-end{
+    justify-content:flex-end;
 }
 
 

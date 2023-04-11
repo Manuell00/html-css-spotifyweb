@@ -1,6 +1,147 @@
 /* Regole generali */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 13px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
+/* Definisco lo stile dell'Upper (tutto ciò che è sopra il footer) */
+#upper {
+    height: calc(100vh - 100px);
+    background-color: #1b1b1b;
+    display: flex;
+}
+
+/* Definisco lo stile dell'header */
+header {
+    height: 80px;
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    background-color: #101010;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+
+/* Definisco la left-side bar ovvero la barra sinistra della pagina */
+#left-side {
+    height: 100%;
+    width: 250px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    align-items: flex-start;
+}
+
+/* Definisco il primo container interno alla left-side */
+#left-side-first-container{
+    padding: 10px 0;
+    max-height:700px;
+    width: 250px;
+    color: white;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center ;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.left-side-image{
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left-side-image img{
+    max-width: 70%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Definisco lo stile del menu della left-side */
+.menu {
+    width: 100%;
+    list-style-type: none;
+}
+
+.menu li{
+    padding: 10px 15px;
+    opacity: 0.6;
+}
+
+.no-opacity{ 
+    opacity: 1 !important;
+}
+
+#border-yellow{
+    border-left: 3px solid #a7f815;
+}
+
+/* Definisco la grandezza e lo stile per il menu title, text, symbol */
+.text-title{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.text-menu{
+    font-size: 15px;
+}
+
+.symbol-menu > i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.fa-plus{
+    background-color: white;
+    color: #666666;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Definisco lo stile del main */
+main {
+    width: calc(100% - 250px);
+    height: 100%;
+}
+
+
+
+/* Definisco lo stile del footer ovvero del Player */
+footer {
+    height: 100px;
+    background-color: #666666;
 }
