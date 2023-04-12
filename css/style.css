@@ -483,7 +483,7 @@ li:hover {
 
 
 
-/* INSERISCO LE MEDIA QUERY PER LA VERSIONE GRANDE LG */
+/* INSERISCO LE MEDIA QUERY PER LA VERSIONE GRANDE MD */
 
 @media screen and (max-width:1080px) {
 
@@ -581,16 +581,6 @@ li:hover {
     }
     
 }
-
-
-
-/* INSERISCO LE MEDIA QUERY PER LA VERSIONE COMPUTER MD */
-
-@media screen and (max-width:1080px) {
-    
-}
-
-
 
 
 
