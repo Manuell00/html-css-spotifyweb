@@ -47,7 +47,7 @@ nav {
     height: 100%;
 }
 
-.col-lg-2{
+.col-lg-2 {
     text-align: center;
 }
 
@@ -62,12 +62,12 @@ nav {
     background-color: #000000;
     display: flex;
     flex-direction: column;
-    justify-content:space-between ;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
 /* Definisco il primo container interno alla left-side */
-#left-side-container{
+#left-side-container {
     padding: 10px 0;
     width: 250px;
     color: white;
@@ -75,12 +75,12 @@ nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content:center ;
+    justify-content: center;
     align-items: flex-start;
     gap: 15px;
 }
 
-.left-side-image{
+.left-side-image {
     padding: 10px;
     height: 80px;
     width: 100%;
@@ -88,7 +88,7 @@ nav {
     align-items: center;
 }
 
-.left-side-image img{
+.left-side-image img {
     max-width: 70%;
     max-height: 100%;
     object-fit: cover;
@@ -101,24 +101,24 @@ nav {
     list-style-type: none;
 }
 
-.menu li{
+.menu li {
     padding: 7px 15px;
     opacity: 0.6;
 }
 
-.no-opacity{ 
+.no-opacity {
     opacity: 1 !important;
 }
 
-#border-yellow{
+#border-yellow {
     border-left: 3px solid #a7f815;
 }
 
-#border-bottom-yellow{
+#border-bottom-yellow {
     border-bottom: 1px solid #a7f815;
 }
 
-#menu-bar{
+#menu-bar {
     width: 250px;
     height: 1px;
     margin: 10px 0;
@@ -127,36 +127,36 @@ nav {
 }
 
 /* Definisco la grandezza e lo stile per il menu title, text, symbol */
-.text-title{
+.text-title {
     font-size: 15px;
     font-weight: 600;
 }
 
-.text-menu{
+.text-menu {
     font-size: 13px;
 }
 
-.little-text-menu{
+.little-text-menu {
     font-size: 11px;
 }
 
-.symbol-menu > i{
+.symbol-menu>i {
     font-size: 20px;
     margin-right: 10px;
 }
 
-.little-symbol-menu > i{
+.little-symbol-menu>i {
     font-size: 10px;
     margin-right: 10px;
 }
 
-.fa-plus{
+.fa-plus {
     background-color: white;
     color: #666666;
     padding: 10px;
 }
 
-.fa-user{
+.fa-user {
     border-radius: 50%;
     background-color: #666666;
     padding: 5px;
@@ -186,18 +186,18 @@ main {
     flex-wrap: wrap;
 }
 
-.main-menu li{
+.main-menu li {
     padding: 10px 15px;
     opacity: 0.6;
 }
 
-main h2{
+main h2 {
     margin-left: 15px;
     font-size: 25px;
     font-weight: 500;
 }
 
-main h3{
+main h3 {
     text-align: center;
     font-size: 15px;
     font-weight: 500;
@@ -205,16 +205,17 @@ main h3{
 
 
 /* Definisco lo stile della recently play, John-Doe e artisti-popolari*/
-.recently-play{
+.recently-play {
     margin: 20px auto;
 }
 
-.subtitle{
+.subtitle {
     font-size: 10px;
     opacity: 0.6;
     margin-top: 5px;
     text-align: center;
 }
+
 .main-subtitle {
     font-size: 10px;
     opacity: 0.6;
@@ -224,11 +225,11 @@ main h3{
 }
 
 /* Definisco il container contenente le immagini e gestisco il simbolo del play sopra */
-.image-container{
+.image-container {
     position: relative;
 }
 
-.image-container span{
+.image-container span {
     position: absolute;
     bottom: 50%;
     right: 50%;
@@ -236,36 +237,37 @@ main h3{
     display: none;
 }
 
-.main-central-big-symbol-menu>i{
-    font-size: 60px;  
+.main-central-big-symbol-menu>i {
+    font-size: 60px;
 }
 
-.image-container img{
+.image-container img {
     max-width: 100%;
     object-fit: cover;
     padding: 15px;
 }
 
 /* Temporaneo */
-.row img{
+.row img {
     max-width: 100%;
     object-fit: cover;
     padding: 15px;
 }
+
 /* Temporaneo */
 
-.artisti-popolari img{
+.artisti-popolari img {
     border-radius: 50%;
     max-width: 100%;
     object-fit: cover;
     padding: 15px;
 }
 
-.john-doe{
+.john-doe {
     margin: 40px 0;
 }
 
-.artisti-popolari{
+.artisti-popolari {
     margin-bottom: 100px;
 }
 
@@ -282,7 +284,7 @@ footer {
     left: 0;
 }
 
-.footer-container{
+.footer-container {
     color: white;
     height: 100%;
     width: 100%;
@@ -294,7 +296,7 @@ footer {
     flex-wrap: wrap;
 }
 
-.little-row-footer-container-right{
+.little-row-footer-container-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -303,7 +305,7 @@ footer {
     gap: 15px;
 }
 
-.little-row-footer-container-left{
+.little-row-footer-container-left {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -312,7 +314,7 @@ footer {
     gap: 15px;
 }
 
-.little-column-footer-container{
+.little-column-footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -321,24 +323,24 @@ footer {
     gap: 10px;
 }
 
-.footer-image{
+.footer-image {
     width: 50px;
     height: 50px;
 }
 
-.footer-image img{
+.footer-image img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
 /* Definisco lo stile del testo e dei simboli del footer */
-.footer-title{
+.footer-title {
     font-size: 13px;
     font-weight: 600;
 }
 
-.footer-text{
+.footer-text {
     opacity: 0.6;
     font-size: 10px;
 }
@@ -347,27 +349,28 @@ footer {
     opacity: 0.6;
 }
 
-.footer-symbol-menu > i{
+.footer-symbol-menu>i {
     font-size: 15px;
 }
 
-.footer-central-symbol-menu{
+.footer-central-symbol-menu {
     margin: 0 10px;
 }
-.footer-central-symbol-menu > i{
+
+.footer-central-symbol-menu>i {
     font-size: 18px;
 }
 
-.footer-central-big-symbol-menu > i{
+.footer-central-big-symbol-menu>i {
     font-size: 25px;
 }
 
-.fa-heart{
+.fa-heart {
     margin-left: 25px;
 }
 
 /* Definisco la barra di centrale del footer */
-.footer-central-bar{
+.footer-central-bar {
     height: 4px;
     width: 350px;
     border-radius: 20px;
@@ -376,14 +379,14 @@ footer {
     position: relative;
 }
 
-.footer-central-internal-bar{
+.footer-central-internal-bar {
     height: 4px;
     width: 50px;
     border-radius: 20px;
     background-color: white;
 }
 
-.circle{
+.circle {
     height: 10px;
     width: 10px;
     border-radius: 50%;
@@ -396,7 +399,7 @@ footer {
 
 
 /* Definisco la barra di destra del footer */
-.footer-right-bar{
+.footer-right-bar {
     height: 3px;
     width: 130px;
     border-radius: 20px;
@@ -405,7 +408,7 @@ footer {
     position: relative;
 }
 
-.footer-right-internal-bar{
+.footer-right-internal-bar {
     height: 3px;
     width: 50px;
     border-radius: 20px;
@@ -419,16 +422,16 @@ footer {
 /* INSERIMENTO DEGLI HOVER */
 
 /* Inserisco gli hover per il player sulle immagini */
-.image-container:hover > span{
+.image-container:hover>span {
     display: block;
 }
 
-.image-container:hover > img{
+.image-container:hover>img {
     opacity: 0.6;
 }
 
 /* Inserisco l'hover per il button */
-.button:hover{
+.button:hover {
     padding: 15px 25px;
     border-radius: 30px;
     cursor: pointer;
@@ -440,16 +443,16 @@ li:hover {
 }
 
 /* Inserisco l'hover per il testo piccolo del footer e per i simboli */
-.footer-text:hover{
+.footer-text:hover {
     text-decoration: underline;
     opacity: 1;
 }
 
-.footer-symbol-menu:hover{
+.footer-symbol-menu:hover {
     opacity: 1;
 }
 
-.footer-central-big-symbol-menu:hover > i{
+.footer-central-big-symbol-menu:hover>i {
     font-size: 40px;
 }
 
@@ -460,11 +463,11 @@ li:hover {
     opacity: 1;
 }
 
-.footer-central-bar:hover > .footer-central-internal-bar{
+.footer-central-bar:hover>.footer-central-internal-bar {
     background-color: #a7f815;
 }
 
-.footer-central-bar:hover > .circle{
+.footer-central-bar:hover>.circle {
     display: block;
     bottom: -3px;
 }
@@ -474,10 +477,11 @@ li:hover {
     opacity: 1;
 }
 
-.footer-right-bar:hover > .footer-right-internal-bar{
+.footer-right-bar:hover>.footer-right-internal-bar {
     background-color: #a7f815;
 }
-.footer-right-bar:hover > .circle{
+
+.footer-right-bar:hover>.circle {
     display: block;
 }
 
@@ -488,98 +492,116 @@ li:hover {
 @media screen and (max-width:1080px) {
 
     /* LEFT SIDE BAR */
-    #left-side-container{
+    #left-side-container {
         padding: 5px 0;
         gap: 10px;
     }
-    
-    .left-side-image{
+
+    .left-side-image {
         padding: 5px;
         height: 50px;
     }
-    
-    .left-side-image img{
+
+    .left-side-image img {
         max-width: 70%;
         max-height: 100%;
         object-fit: cover;
     }
-    
-    
-    .menu li{
+
+
+    .menu li {
         padding: 5px 10px;
     }
-    
-    .text-title{
+
+    .text-title {
         font-size: 12px;
         font-weight: 600;
     }
-    
-    .text-menu{
+
+    .text-menu {
         font-size: 10px;
     }
-    
-    .little-text-menu{
+
+    .little-text-menu {
         font-size: 9px;
     }
-    
-    .symbol-menu > i{
+
+    .symbol-menu>i {
         font-size: 15px;
         margin-right: 5px;
     }
-    
-    .little-symbol-menu > i{
+
+    .little-symbol-menu>i {
         font-size: 8px;
         margin-right: 5px;
     }
-    
-    .fa-plus{
+
+    .fa-plus {
         padding: 5px;
     }
 
-    
+
     /* FOOTER */
-    .footer-image{
+    .little-row-footer-container-left {
+        gap: 10px;
+    }
+    
+    .little-row-footer-container-right {
+        gap: 10px;
+    }
+
+    .footer-image {
         width: 30px;
         height: 30px;
     }
-    
-    .footer-central-bar{
+
+    .footer-central-bar {
         width: 200px;
     }
 
-    .footer-right-bar{
+    .footer-central-internal-bar {
+        width: 25px;
+    }
+
+    .footer-right-bar {
         width: 60px;
     }
 
-    .footer-title{
+    .footer-right-internal-bar {
+        width: 20px;
+    }
+    
+
+    .footer-title {
         font-size: 10px;
         font-weight: 600;
     }
-    
-    .footer-text{
+
+    .footer-text {
         opacity: 0.6;
         font-size: 8px;
     }
-    
-    .footer-symbol-menu > i{
+
+    .footer-symbol-menu>i {
         font-size: 13px;
     }
-    
-    .footer-central-symbol-menu{
+
+    .footer-central-symbol-menu {
         margin: 0 8PX;
     }
-    .footer-central-symbol-menu > i{
+
+    .footer-central-symbol-menu>i {
         font-size: 15px;
     }
-    
-    .footer-central-big-symbol-menu > i{
+
+    .footer-central-big-symbol-menu>i {
         font-size: 21px;
     }
-    
-    .fa-heart{
+
+    .fa-heart {
         margin-left: 15px;
     }
-    
+
 }
 
 
@@ -587,18 +609,84 @@ li:hover {
 /* INSERISCO LE MEDIA QUERY PER LA VERSIONE TABLET S */
 
 @media screen and (max-width:768px) {
-    
+
+    header {
+        width: calc(100% - 150px);
+        margin-left: 150px;
+    }
+
+    #left-side {
+        width: 150px;
+    }
+
+    #left-side-container {
+        width: 150px;
+    }
+
+    #menu-bar {
+        width: 150px;
+    }
+
+    main {
+        width: calc(100% - 150px);
+    }
+
+
+    /* FOOTER */
+    .little-row-footer-container-left {
+        gap: 5px;
+    }
+
+    .little-row-footer-container-right {
+        gap: 5px;
+    }
+
+    .footer-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-central-bar {
+        width: 130px;
+    }
+
+    .footer-right-bar {
+        width: 40px;
+    }
+
+    .footer-title {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .footer-text {
+        opacity: 0.6;
+        font-size: 8px;
+    }
+
+    .footer-symbol-menu>i {
+        font-size: 10px;
+    }
+
+    .footer-central-symbol-menu {
+        margin: 0 5px;
+    }
+
+    .footer-central-symbol-menu>i {
+        font-size: 12px;
+    }
+
+    .footer-central-big-symbol-menu>i {
+        font-size: 17px;
+    }
+
+    .fa-heart {
+        margin-left: 0px;
+    }
 }
-
-
-
-
 
 
 
 /* INSERISCO LE MEDIA QUERY PER LA VERSIONE SMARTPHONE XS */
 
-@media screen and (max-width:768px) {
-    
-}
-
+@media screen and (max-width:480px) {}
