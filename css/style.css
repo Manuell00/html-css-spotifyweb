@@ -294,10 +294,19 @@ footer {
     flex-wrap: wrap;
 }
 
-.little-row-footer-container{
+.little-row-footer-container-right{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.little-row-footer-container-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
@@ -315,8 +324,8 @@ footer {
 .footer-image{
     width: 50px;
     height: 50px;
-
 }
+
 .footer-image img{
     max-width: 100%;
     max-height: 100%;
@@ -360,7 +369,7 @@ footer {
 /* Definisco la barra di centrale del footer */
 .footer-central-bar{
     height: 4px;
-    width: 400px;
+    width: 350px;
     border-radius: 20px;
     background-color: #666666;
     opacity: 0.6;
@@ -472,4 +481,134 @@ li:hover {
     display: block;
 }
 
+
+
+/* INSERISCO LE MEDIA QUERY PER LA VERSIONE GRANDE LG */
+
+@media screen and (max-width:1080px) {
+
+    /* LEFT SIDE BAR */
+    #left-side-container{
+        padding: 5px 0;
+        gap: 10px;
+    }
+    
+    .left-side-image{
+        padding: 5px;
+        height: 50px;
+    }
+    
+    .left-side-image img{
+        max-width: 70%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    .menu li{
+        padding: 5px 10px;
+    }
+    
+    .text-title{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .text-menu{
+        font-size: 10px;
+    }
+    
+    .little-text-menu{
+        font-size: 9px;
+    }
+    
+    .symbol-menu > i{
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    
+    .little-symbol-menu > i{
+        font-size: 8px;
+        margin-right: 5px;
+    }
+    
+    .fa-plus{
+        padding: 5px;
+    }
+
+    
+    /* FOOTER */
+    .footer-image{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .footer-central-bar{
+        width: 200px;
+    }
+
+    .footer-right-bar{
+        width: 60px;
+    }
+
+    .footer-title{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    
+    .footer-text{
+        opacity: 0.6;
+        font-size: 8px;
+    }
+    
+    .footer-symbol-menu > i{
+        font-size: 13px;
+    }
+    
+    .footer-central-symbol-menu{
+        margin: 0 8PX;
+    }
+    .footer-central-symbol-menu > i{
+        font-size: 15px;
+    }
+    
+    .footer-central-big-symbol-menu > i{
+        font-size: 21px;
+    }
+    
+    .fa-heart{
+        margin-left: 15px;
+    }
+    
+}
+
+
+
+/* INSERISCO LE MEDIA QUERY PER LA VERSIONE COMPUTER MD */
+
+@media screen and (max-width:1080px) {
+    
+}
+
+
+
+
+
+/* INSERISCO LE MEDIA QUERY PER LA VERSIONE TABLET S */
+
+@media screen and (max-width:768px) {
+    
+}
+
+
+
+
+
+
+
+/* INSERISCO LE MEDIA QUERY PER LA VERSIONE SMARTPHONE XS */
+
+@media screen and (max-width:768px) {
+    
+}
 
