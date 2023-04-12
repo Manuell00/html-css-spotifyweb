@@ -390,7 +390,7 @@ footer {
 
 
 /* INSERIMENTO DEGLI HOVER */
-.image-container:hover + i{ 
+.image-container:hover > .main-central-big-symbol-menu { 
     display: block;
     cursor: pointer;
 
