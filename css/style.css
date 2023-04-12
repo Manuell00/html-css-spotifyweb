@@ -1,3 +1,4 @@
+/* GENERALI */
 /* Regole generali */
 * {
     margin: 0;
@@ -15,6 +16,9 @@
     text-align: center;
 }
 
+
+
+/* UPPER */
 /* Definisco lo stile dell'Upper (tutto ciò che è sopra il footer) */
 #upper {
     height: calc(100vh - 80px);
@@ -23,6 +27,8 @@
     z-index: 0;
 }
 
+
+/* HEADER */
 /* Definisco lo stile dell'header */
 header {
     height: 80px;
@@ -46,6 +52,8 @@ nav {
 }
 
 
+
+/* LEFT SIDE BAR */
 /* Definisco la left-side bar ovvero la barra sinistra della pagina */
 #left-side {
     height: 100%;
@@ -151,10 +159,7 @@ nav {
 
 
 
-
-
-
-
+/* MAIN */
 /* Definisco lo stile del main */
 main {
     width: calc(100% - 250px);
@@ -213,11 +218,36 @@ main h3{
     padding: 5px 15px;
 }
 
+/* Definisco il container contenente le immagini e gestisco il simbolo del play sopra */
+.image-container{
+    position: relative;
+}
+
+.image-container span{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.main-central-big-symbol-menu>i{
+    display: none;
+    font-size: 60px;  
+}
+
+.image-container img{
+    max-width: 100%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+/* Temporaneo */
 .row img{
     max-width: 100%;
     object-fit: cover;
     padding: 15px;
 }
+/* Temporaneo */
 
 .artisti-popolari img{
     border-radius: 50%;
@@ -236,6 +266,7 @@ main h3{
 
 
 
+/* FOOTER */
 /* Definisco lo stile del footer ovvero del Player */
 footer {
     width: 100%;
@@ -352,4 +383,15 @@ footer {
     width: 50px;
     border-radius: 20px;
     background-color: white;
+}
+
+
+
+
+
+/* INSERIMENTO DEGLI HOVER */
+.image-container:hover + i{ 
+    display: block;
+    cursor: pointer;
+
 }
