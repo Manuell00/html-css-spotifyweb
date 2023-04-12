@@ -117,8 +117,13 @@ nav {
 #border-bottom-yellow{
     border-bottom: 1px solid #a7f815;
 }
-#border-bottom{
-    border-bottom: 1px solid white;
+
+#menu-bar{
+    width: 250px;
+    height: 1px;
+    margin: 10px 0;
+    background-color: white;
+    opacity: 0.6;
 }
 
 /* Definisco la grandezza e lo stile per il menu title, text, symbol */
@@ -228,10 +233,10 @@ main h3{
     bottom: 50%;
     right: 50%;
     transform: translate(50%, 50%);
+    display: none;
 }
 
 .main-central-big-symbol-menu>i{
-    display: none;
     font-size: 60px;  
 }
 
@@ -359,6 +364,7 @@ footer {
     border-radius: 20px;
     background-color: #666666;
     opacity: 0.6;
+    position: relative;
 }
 
 .footer-central-internal-bar{
@@ -366,6 +372,17 @@ footer {
     width: 50px;
     border-radius: 20px;
     background-color: white;
+}
+
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 45px;
+    bottom: -4px;
+    display: none;
 }
 
 
@@ -376,6 +393,7 @@ footer {
     border-radius: 20px;
     background-color: #666666;
     opacity: 0.6;
+    position: relative;
 }
 
 .footer-right-internal-bar{
@@ -390,8 +408,68 @@ footer {
 
 
 /* INSERIMENTO DEGLI HOVER */
-.image-container:hover > .main-central-big-symbol-menu { 
-    display: block;
-    cursor: pointer;
 
+/* Inserisco gli hover per il player sulle immagini */
+.image-container:hover > span{
+    display: block;
 }
+
+.image-container:hover > img{
+    opacity: 0.6;
+}
+
+/* Inserisco l'hover per il button */
+.button:hover{
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Inserisco l'hover per gli li */
+li:hover {
+    opacity: 1;
+}
+
+/* Inserisco l'hover per il testo piccolo del footer e per i simboli */
+.footer-text:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.footer-symbol-menu:hover{
+    opacity: 1;
+}
+
+.footer-central-big-symbol-menu:hover > i{
+    font-size: 40px;
+}
+
+
+/* Gestisco gli hover delle barre nel footer */
+/* Barra centrale */
+.footer-central-bar:hover {
+    opacity: 1;
+}
+
+.footer-central-bar:hover > .footer-central-internal-bar{
+    background-color: #a7f815;
+}
+
+.footer-central-bar:hover > .circle{
+    display: block;
+    bottom: -3px;
+}
+
+/* Barra di destra */
+.footer-right-bar:hover {
+    opacity: 1;
+}
+
+.footer-right-bar:hover > .footer-right-internal-bar{
+    background-color: #a7f815;
+}
+.footer-right-bar:hover > .circle{
+    display: block;
+}
+
+
