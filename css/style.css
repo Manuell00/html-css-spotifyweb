@@ -41,21 +41,27 @@ nav {
     height: 100%;
 }
 
+.col-lg-2{
+    text-align: center;
+}
+
 
 /* Definisco la left-side bar ovvero la barra sinistra della pagina */
 #left-side {
     height: 100%;
     width: 250px;
+    color: white;
     background-color: #000000;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content:space-between ;
     align-items: flex-start;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /* Definisco il primo container interno alla left-side */
-#left-side-first-container{
+#left-side-container{
     padding: 10px 0;
     width: 250px;
     color: white;
@@ -65,20 +71,7 @@ nav {
     flex-wrap: wrap;
     justify-content:center ;
     align-items: flex-start;
-    gap: 20px;
-}
-
-#left-side-second-container{
-    padding: 10px 0;
-    width: 250px;
-    color: white;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content:center ;
-    align-items: flex-start;
-    gap: 20px;
+    gap: 15px;
 }
 
 .left-side-image{
@@ -106,7 +99,7 @@ nav {
 }
 
 .menu li{
-    padding: 10px 15px;
+    padding: 7px 15px;
     opacity: 0.6;
 }
 
@@ -129,7 +122,6 @@ nav {
 .text-title{
     font-size: 15px;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 .text-menu{
@@ -154,6 +146,12 @@ nav {
     background-color: white;
     color: #666666;
     padding: 10px;
+}
+
+.fa-user{
+    border-radius: 50%;
+    background-color: #666666;
+    padding: 5px;
 }
 
 
@@ -235,6 +233,10 @@ main h3{
 
 .john-doe{
     margin: 40px 0;
+}
+
+.artisti-popolari{
+    margin-bottom: 100px;
 }
 
 
