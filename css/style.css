@@ -52,8 +52,6 @@ nav {
     flex-wrap: wrap;
     justify-content:space-between ;
     align-items: flex-start;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 /* Definisco il primo container interno alla left-side */
@@ -120,6 +118,9 @@ nav {
     border-left: 3px solid #a7f815;
 }
 
+#border-bottom-yellow{
+    border-bottom: 1px solid #a7f815;
+}
 #border-bottom{
     border-bottom: 1px solid white;
 }
@@ -165,12 +166,85 @@ nav {
 main {
     width: calc(100% - 250px);
     height: 100%;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    padding: 10px;
+    overflow-y: scroll;
 }
+
+.main-menu {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-menu li{
+    padding: 10px 15px;
+    opacity: 0.6;
+}
+
+main h2{
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+main h3{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Definisco lo stile della recently play, John-Doe e artisti-popolari*/
+.recently-play{
+    margin: 20px auto;
+}
+
+.subtitle{
+    font-size: 10px;
+    opacity: 0.6;
+    margin-top: 5px;
+    text-align: center;
+}
+.main-subtitle {
+    font-size: 10px;
+    opacity: 0.6;
+    margin-top: 5px;
+    text-align: left;
+    padding: 5px 15px;
+}
+
+.row img{
+    max-width: 100%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+.artisti-popolari img{
+    border-radius: 50%;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+.john-doe{
+    margin: 40px 0;
+}
+
 
 
 /* Definisco lo stile del footer ovvero del Player */
 footer {
+    width: 100%;
     height: 100px;
     background-color: #666666;
-    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
