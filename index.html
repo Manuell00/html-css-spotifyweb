@@ -30,11 +30,13 @@
 </head>
 
 <body>
+
+    <!-- Creo un grande container per l'UPPER del progetto -->
     <div id="upper">
 
-        <!-- Header -->
+        <!-- HEADER -->
         <header>
-            <!-- Navbar -->
+            <!-- NAVBAR -->
             <nav>
                 <div class="button">EFFETTUA L'UPGRADE</div>
             </nav>
@@ -65,8 +67,14 @@
                 <div class="playlist">
                     <ul class="menu">
                         <li class="no-opacity"><span class="text-title">PLAYLIST</span></li>
-                        <li><span class="symbol-menu"><i class="fa-solid fa-plus"></i></span> <span
-                                class="text-menu">Crea Playlist</span></li>
+                        <li><span class="symbol-menu"><i class="fa-solid fa-plus"></i></span>
+                            <span class="text-menu">Crea Playlist</span></li>
+                    </ul>
+                </div>
+
+                <!-- Definisco gli elementi della lista della playlist-->
+                <div class="playlist-item">
+                    <ul class="menu">
                         <li><span class="text-menu">Nome Playlist</span></li>
                         <li><span class="text-menu">Nome Playlist</span></li>
                         <li><span class="text-menu">Nome Playlist</span></li>
@@ -78,12 +86,16 @@
                 </div>
             </div>
 
+            <!-- Creo un ulteriore left side container nel quale inserirò gli ultimi elementi della side bar -->
             <div id="left-side-container">
                 <ul class="menu">
                     <li><span class="little-symbol-menu"><i class="fa-regular fa-circle-down"></i></span>
                         <span class="little-text-menu">Installa App</span>
                     </li>
+                    <!-- Inserisco la barra spaziatrice  -->
                     <div id="menu-bar"></div>
+
+                    <!-- Inserisco il logo dello user -->
                     <li class="no-opacity">
                         <span class="symbol-menu"><i class="fa-solid fa-user"></i></span>
                         <span class="text-title">John Doe</span>
@@ -92,12 +104,14 @@
             </div>
         </div>
 
-        <!-- Main -->
+
+        <!-- MAIN -->
         <main>
             <!-- Definisco il main-menu -->
             <ul class="main-menu">
                 <li id="border-bottom-yellow"><span class="text-menu">IN EVIDENZA</span>
-                <div id="evidenza-bar"></div></li>
+                    <div id="evidenza-bar"></div>
+                </li>
                 <li><span class="text-menu">PODCAST</span></li>
                 <li><span class="text-menu">CLASSIFICHE</span></li>
                 <li><span class="text-menu">GENERI E MOOD</span></li>
@@ -224,7 +238,8 @@
         </main>
     </div>
 
-    <!-- Footer -->
+
+    <!-- FOOTER (fuori dall'upper) -->
     <footer>
         <div class="footer-container">
             <!-- Inserisco il primo little container interno footer -->
@@ -250,7 +265,7 @@
                     <span class="footer-central-symbol-menu"><i class="fa-solid fa-arrow-rotate-right"></i></span>
                 </div>
 
-
+                <!-- Inserisco la seconda riga della sezione centrale con la caratterizzazione della barra -->
                 <div class="little-row-footer-container-right">
                     <span class="footer-text no-opacity">0:25</span>
                     <span class="footer-central-bar">
@@ -274,6 +289,7 @@
             </div>
         </div>
     </footer>
+    <!-- Chiudo il footer -->
 
 </body>
 
