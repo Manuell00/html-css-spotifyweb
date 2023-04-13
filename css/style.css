@@ -114,10 +114,6 @@ nav {
     border-left: 3px solid #a7f815;
 }
 
-#border-bottom-yellow {
-    border-bottom: 1px solid #a7f815;
-}
-
 #menu-bar {
     width: 250px;
     height: 1px;
@@ -186,10 +182,6 @@ main {
     flex-wrap: wrap;
 }
 
-.main-menu li {
-    padding: 10px 15px;
-    opacity: 0.6;
-}
 
 main h2 {
     margin-left: 15px;
@@ -201,6 +193,29 @@ main h3 {
     text-align: center;
     font-size: 15px;
     font-weight: 500;
+}
+
+.main-menu .text-menu{
+    font-size: 13px;
+}
+
+.main-menu li {
+    padding: 10px 20px;
+    opacity: 0.6;
+}
+
+#border-bottom-yellow{
+    position: relative
+}
+
+#evidenza-bar{
+    width: 30px;
+    height: 2px;
+    background-color: #a7f815;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 
@@ -247,14 +262,11 @@ main h3 {
     padding: 15px;
 }
 
-/* Temporaneo */
 .row img {
     max-width: 100%;
     object-fit: cover;
     padding: 15px;
 }
-
-/* Temporaneo */
 
 .artisti-popolari img {
     border-radius: 50%;
@@ -453,7 +465,15 @@ li:hover {
 }
 
 .footer-central-big-symbol-menu:hover>i {
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.footer-central-symbol-menu:hover>i{
+    font-size: 25px;
+}
+
+.footer-symbol-menu:hover>i{
+    font-size: 18px;
 }
 
 
@@ -631,6 +651,11 @@ li:hover {
         width: calc(100% - 150px);
     }
 
+    #evidenza-bar{
+        width: 20px;
+    }
+
+
 
     /* FOOTER */
     .little-row-footer-container-left {
@@ -683,10 +708,153 @@ li:hover {
     .fa-heart {
         margin-left: 0px;
     }
+
+    .footer-central-big-symbol-menu:hover>i {
+        font-size: 25px;
+    }
+    
+    .footer-central-symbol-menu:hover>i{
+        font-size: 20px;
+    }
+    
+    .footer-symbol-menu:hover>i{
+        font-size: 14px;
+    }
 }
 
 
 
 /* INSERISCO LE MEDIA QUERY PER LA VERSIONE SMARTPHONE XS */
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    header {
+        width: calc(100% - 50px);
+        margin-left: 50px;
+    }
+
+    #left-side {
+        height: 100%;
+        width: 50px;
+    }
+
+    #left-side-container {
+        width: 50px;
+    }
+
+    main {
+        width: calc(100% - 50px);
+    }
+
+    .main-menu li {
+        padding: 10px 8px;
+        opacity: 0.6;
+    }
+
+    .main-menu .text-menu{
+        font-size: 10px;
+    }
+    
+    /* Definisco il primo container interno alla left-side */
+    #left-side-container {
+        padding: 10px 0px;
+        width: 50px;
+        text-align: center;
+    }
+    
+    .left-side-image {
+        display: none;
+    }
+
+    .fa-plus{
+        display: none;
+    }
+    
+    #menu-bar {
+        display:none
+    }
+
+    #border-yellow {
+        border-left: 0px solid #a7f815;
+    }
+    
+    /* Definisco la grandezza e lo stile per il menu title, text, symbol */
+    .text-title {
+        display: none;
+    }
+    
+    .text-menu {
+        display: none;
+    }
+
+    .main-menu  .text-menu{
+        display: block;
+    }
+
+    .little-text-menu {
+        display: none;
+    }
+    
+    .symbol-menu>i {
+        font-size: 22px;
+    }
+    
+    .little-symbol-menu>i {
+        font-size: 12px;
+        margin-right: 0px;
+    }
+
+  
+    
+
+    /* FOOTER */
+    .little-row-footer-container-left {
+        gap: 3px;
+    }
+
+    .little-row-footer-container-right {
+        gap: 3px;
+    }
+
+    .footer-central-bar {
+        width: 100px;
+    }
+
+    .footer-right-bar {
+        width: 30px;
+    }
+
+    .footer-title {
+        font-size: 9px;
+        font-weight: 600;
+    }
+
+    .footer-text {
+        opacity: 0.6;
+        font-size: 7px;
+    }
+
+    .footer-symbol-menu>i {
+        font-size: 8px;
+    }
+
+    .footer-central-symbol-menu {
+        margin: 0 3px;
+    }
+
+    .footer-central-symbol-menu>i {
+        font-size: 15px;
+    }
+
+    .footer-central-big-symbol-menu>i {
+        font-size: 20px;
+    }
+
+    .fa-heart {
+        margin-left: 0px;
+    }
+
+    .footer-central-big-symbol-menu:hover>i {
+        font-size: 25px;
+    }
+}
+    
