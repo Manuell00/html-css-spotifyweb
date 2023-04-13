@@ -121,6 +121,10 @@ nav {
     opacity: 0.6;
 }
 
+#none-symbol-spotify{
+    display: none;
+}
+
 /* Definisco la grandezza e lo stile per il menu title, text, symbol */
 .text-title {
     font-size: 15px;
@@ -775,6 +779,11 @@ li:hover {
     #border-yellow {
         border-left: 0px solid #a7f815;
     }
+
+    #none-symbol-spotify{
+        display: block;
+    }
+    
 
     /* Definisco la grandezza e lo stile per il menu title, text, symbol */
     .text-title {
