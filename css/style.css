@@ -906,3 +906,26 @@ li:hover {
         font-size: 25px;
     }
 }
+
+
+/* INSERISCO DELLE MEDIA QUERIES VERTICALI PER LA SIDEBAR */
+
+@media screen and (max-height:490px) {
+    #left-side-container-2{
+        display: none;
+    }
+
+    #left-side-container-1{
+       max-height: 100%;
+    }
+}
+
+
+@media screen and (max-height:405px) {
+    .playlist-item{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+}
