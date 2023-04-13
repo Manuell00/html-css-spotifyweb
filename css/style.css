@@ -16,6 +16,16 @@
     text-align: center;
 }
 
+/* Inserimento di una scroll-bar personalizzata anche se non richesto :) */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#a7f815);
+    border-radius: 4px;
+}
+
 
 
 /* UPPER */
@@ -67,7 +77,21 @@ nav {
 }
 
 /* Definisco il primo container interno alla left-side */
-#left-side-container {
+#left-side-container-1 {
+    max-height: 80%;
+    padding: 10px 0;
+    width: 250px;
+    color: white;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+#left-side-container-2 {
+    max-height: 30%;
     padding: 10px 0;
     width: 250px;
     color: white;
@@ -91,6 +115,11 @@ nav {
     max-width: 70%;
     max-height: 100%;
     object-fit: cover;
+}
+
+.playlist-item{
+    width: 100%;
+    overflow-y: scroll;
 }
 
 
@@ -642,7 +671,10 @@ li:hover {
         width: 150px;
     }
 
-    #left-side-container {
+    #left-side-container-1 {
+        width: 150px;
+    }
+    #left-side-container-2 {
         width: 150px;
     }
 
@@ -740,7 +772,11 @@ li:hover {
         width: 50px;
     }
 
-    #left-side-container {
+    #left-side-container-1 {
+        width: 50px;
+    }
+
+    #left-side-container-2 {
         width: 50px;
     }
 
@@ -758,7 +794,12 @@ li:hover {
     }
 
     /* Definisco il primo container interno alla left-side */
-    #left-side-container {
+    #left-side-container-1 {
+        padding: 10px 0px;
+        width: 50px;
+        text-align: center;
+    }
+    #left-side-container-2 {
         padding: 10px 0px;
         width: 50px;
         text-align: center;
