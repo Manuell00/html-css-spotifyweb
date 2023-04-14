@@ -910,14 +910,16 @@ li:hover {
 
 /* INSERISCO DELLE MEDIA QUERIES VERTICALI PER LA SIDEBAR */
 
-@media screen and (max-height:390px) {
+
+/* Inerimento della prima media query quando si ha grandezza minore di lg per gestire la sidebar */
+@media screen and (max-height:390px) and (max-width:1080px) {
     .playlist-item{
         display: none;
     }
 
 }
 
-@media screen and (max-height:380px) {
+@media screen and (max-height:380px) and (max-width:1080px) {
     #left-side-container-2{
         display: none;
     }
@@ -927,8 +929,29 @@ li:hover {
     }
 }
 
+@media screen and (max-height:315px) and (max-width:1080px) {
+    .playlist{
+        display: none;
+    }
+}
 
-@media screen and (max-height:315px) {
+
+/* Inerimento della seconda media query quando si ha grandezza lg per gestire la sidebar */
+@media screen and (max-height:480px) and (min-width:1081px) {
+    .playlist-item{
+        display: none;
+    }
+    #left-side-container-2{
+        display: none;
+    }
+
+    #left-side-container-1{
+       max-height: 100%;
+    }
+
+}
+
+@media screen and (max-height:400px) and (min-width:1081px) {
     .playlist{
         display: none;
     }
