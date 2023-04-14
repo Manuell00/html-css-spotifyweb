@@ -935,6 +935,24 @@ li:hover {
     }
 }
 
+@media screen and (max-height:245px) and (max-width:1080px) {
+    #book{
+        display: none;
+    }
+}
+
+@media screen and (max-height:220px) and (max-width:1080px) {
+    #search{
+        display: none;
+    }
+}
+
+@media screen and (max-height:190px) and (max-width:1080px) {
+    #border-yellow{
+        display: none;
+    }
+}
+
 
 /* Inerimento della seconda media query quando si ha grandezza lg per gestire la sidebar */
 @media screen and (max-height:480px) and (min-width:1081px) {
@@ -956,4 +974,22 @@ li:hover {
         display: none;
     }
 
+}
+
+@media screen and (max-height:300px) and (min-width:1081px) {
+    #book{
+        display: none;
+    }
+}
+
+@media screen and (max-height:265px) and (min-width:1081px) {
+    #search{
+        display: none;
+    }
+}
+
+@media screen and (max-height:235px) and (min-width:1081px) {
+    #border-yellow{
+        display: none;
+    }
 }
