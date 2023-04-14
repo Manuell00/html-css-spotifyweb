@@ -910,7 +910,14 @@ li:hover {
 
 /* INSERISCO DELLE MEDIA QUERIES VERTICALI PER LA SIDEBAR */
 
-@media screen and (max-height:490px) {
+@media screen and (max-height:390px) {
+    .playlist-item{
+        display: none;
+    }
+
+}
+
+@media screen and (max-height:380px) {
     #left-side-container-2{
         display: none;
     }
@@ -921,11 +928,9 @@ li:hover {
 }
 
 
-@media screen and (max-height:405px) {
-    .playlist-item{
-        display: none;
-    }
+@media screen and (max-height:315px) {
     .playlist{
         display: none;
     }
+
 }
